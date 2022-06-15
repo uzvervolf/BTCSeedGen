@@ -13,7 +13,7 @@ lock = threading.Lock()
 
 proxies = {'http': '45.14.174.170:80', 'http': '91.243.35.206:80', 'http': '173.245.49.90:80', 'http': '45.8.105.154:80'}
 
-dictionary = requests.get('https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/japanese.txt').text.strip().split('\n')
+dictionary = requests.get('https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/english.txt').text.strip().split('\n')
 
 def getBalance(addr):
     try:
@@ -34,7 +34,7 @@ def generateSeed():
 
 
 def bip39(mnemonic_words):
-    mobj = mnemonic.Mnemonic("japanese")
+    mobj = mnemonic.Mnemonic("english")
     seed = mobj.to_seed(mnemonic_words)
 
     bip32_root_key_obj = bip32utils.BIP32Key.fromEntropy(seed)
