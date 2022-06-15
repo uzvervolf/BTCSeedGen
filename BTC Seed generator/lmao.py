@@ -5,7 +5,7 @@ import binascii
 class Bip39Gen(object):
     def __init__(self, bip39wordlist):
         self.bip39wordlist = bip39wordlist
-        word_count = 12
+        word_count = 24
         checksum_bit_count = word_count // 3
         total_bit_count = word_count * 11
         generated_bit_count = total_bit_count - checksum_bit_count
