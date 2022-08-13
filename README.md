@@ -16,5 +16,3 @@ cd BTC Seed generator
 pip3 install -r requirements.txt
 
 python3 main.py
-
-You can say "Thanks!" in BTC (10%) on bc1qae37f9h3e69sfzgt86ecn8rsfuk5r9gs5dpts6
